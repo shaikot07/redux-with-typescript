@@ -9,11 +9,14 @@ const dispatch =useAppDispatch()
 const {count} =useAppSelector((state)=>state.counter)
 
 
-const handleIncrement=()=>{
-  dispatch(increment())
+const handleIncrement=(amount:number)=>{
+  dispatch(increment(amount))
 }
 const handleDecrement=()=>{
   dispatch(decrement())
+}
+const handleReset=()=>{
+  dispatch()
 }
 
   return (
@@ -26,11 +29,17 @@ const handleDecrement=()=>{
             <p>Result: {count}</p>
 
             <div className="mt-6 ">
-              <button onClick={ handleIncrement} className="bg-purple-600 mr-5 text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-700 transition duration-300">
+              <button onClick={()=> handleIncrement(5)} className="bg-pink-600 mr-5 text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-700 transition duration-300">
+                Increment By 5
+              </button>
+              <button onClick={()=> handleIncrement(1)} className="bg-purple-600 mr-5 text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-700 transition duration-300">
                 Increment
               </button>
               <button onClick={ handleDecrement} className="bg-gray-300 text-gray-800 px-4 py-2 rounded-md shadow-md hover:bg-gray-400 transition duration-300">
                 Decrement
+              </button>
+              <button onClick={handleReset} className="bg-gray-300 text-gray-800 px-4 py-2 rounded-md shadow-md hover:bg-gray-400 transition duration-300">
+               Reset 
               </button>
             </div>
           </div>
