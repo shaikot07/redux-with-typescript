@@ -1,7 +1,8 @@
-import { useDispatch,  } from "react-redux";
+
 import "./index.css"; // Import Tailwind CSS
 import { decrement, increment, reset } from "./redux/features/counter/CounterSlice";
 import { useAppDispatch, useAppSelector } from "./redux/hook";
+import { Button } from "./components/ui/button";
 
 function App() {
 
@@ -29,9 +30,9 @@ const handleReset=()=>{
             <p>Result: {count}</p>
 
             <div className="mt-6 ">
-              <button onClick={()=> handleIncrement(5)} className="bg-pink-600 mr-5 text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-700 transition duration-300">
+              <Button onClick={()=> handleIncrement(5)} className="bg-pink-600 mr-5 text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-700 transition duration-300">
                 Increment By 5
-              </button>
+              </Button>
               <button onClick={()=> handleIncrement(1)} className="bg-purple-600 mr-5 text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-700 transition duration-300">
                 Increment
               </button>
