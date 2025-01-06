@@ -3,7 +3,8 @@ import React from 'react';
 const TaskPage = () => {
     return (
         <div>
-           <h2> this is a TASK PAGES </h2>
+           <h2 className='text-center text-2xl'> This is a <span className='text-orange-500'>TASK PAGES</span></h2> 
+          
         </div>
     );
 };
