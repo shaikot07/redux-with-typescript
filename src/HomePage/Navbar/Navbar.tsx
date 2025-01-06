@@ -11,7 +11,8 @@ const Navbar = () => {
         >
          
           <span className="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Task Master
+          
+            <h2 className="text-orange-500 text-2xl">Task <span className="text-white">Master </span> </h2>
           </span>
         </a>
         <button
