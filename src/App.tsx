@@ -23,14 +23,14 @@ const handleReset=()=>{
   return (
     <>
       <div className="min-h-screen bg-[#F3E8FF] p-8">
-        <h2 className=" text-center text-2xl font-semibold">
+        <h2 className=" text-center text-4xl font-semibold">
           Explore The <span className="text-[#7B5EA7]">Redux-Toolkit</span> With{" "}
           <span className="text-[#3178C6]"> TypeScript</span>
           <div className="mt-10">
             <p>Result: {count}</p>
 
-            <div className="mt-6 ">
-              <Button onClick={()=> handleIncrement(5)} className="bg-pink-600 mr-5 text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-700 transition duration-300">
+            <div className="mt-6 bg-violet-300 ">
+              <Button onClick={()=> handleIncrement(5)} className="bg-pink-600 mr-5 text-white px-4 py-2  rounded-md shadow-md hover:bg-purple-700 transition duration-300">
                 Increment By 5
               </Button>
               <button onClick={()=> handleIncrement(1)} className="bg-purple-600 mr-5 text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-700 transition duration-300">
