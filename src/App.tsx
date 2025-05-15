@@ -27,7 +27,7 @@ const handleReset=()=>{
           Explore The <span className="text-[#7B5EA7]">Redux-Toolkit</span> With{" "}
           <span className="text-[#3178C6]"> TypeScript</span>
           <div className="mt-10">
-            <p>Result: {count}</p>
+            <p className="bg-purple-700">Result: {count}</p>
 
             <div className="mt-6 bg-violet-300 ">
               <Button onClick={()=> handleIncrement(5)} className="bg-pink-600 mr-5 text-white px-4 py-2  rounded-md shadow-md hover:bg-purple-700 transition duration-300">
@@ -39,7 +39,7 @@ const handleReset=()=>{
               <button onClick={ handleDecrement} className="bg-gray-300 mr-5 text-gray-800 px-4 py-2 rounded-md shadow-md hover:bg-gray-400 transition duration-300">
                 Decrement
               </button>
-              <button onClick={handleReset} className="bg-green-800 text-white px-4 py-2 rounded-md shadow-md hover:bg-gray-400 transition duration-300">
+              <button onClick={handleReset} className="bg-green-800 text-white px-4 py-2 rounded-md shadow-md hover:bg-purple-500 transition duration-300">
                Reset 
               </button>
             </div>
